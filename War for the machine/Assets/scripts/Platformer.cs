@@ -8,10 +8,6 @@ public class Platformer : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody2D rb;
     public float jumpForce;
-    bool isGrounded = false;
-    public Transform isGroundedChecker;
-    public float checkGroundRadius;
-    public LayerMask groundLayer;
     private Animator anim;
     public int pontos = 0;
     public int vidas = 3;
@@ -37,7 +33,7 @@ public class Platformer : MonoBehaviour
     {
         Move();
         Jump();
-        CheckIfGrounded();
+        
         if (Input.GetButtonDown("Fire2"))
         {
             maudioSrc.Play();
@@ -61,23 +57,12 @@ void FixedUpdate()
         rb.velocity = new Vector2(moveBy, rb.velocity.y);
     }
     void Jump() {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
     }
-    void CheckIfGrounded()
-    {
-        Collider2D collider = Physics2D.OverlapCircle(isGroundedChecker.position, checkGroundRadius, groundLayer);
-        if (collider != null)
-        {
-            isGrounded = true;
-        }
-        else
-        {
-            isGrounded = false;
-        }
-    }
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         //check, if gameobject has tag Moeda
