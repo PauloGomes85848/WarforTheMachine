@@ -4,92 +4,94 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Platformer : MonoBehaviour
 {
-    public float speed;
+    //public float speed;
     // Start is called before the first frame update
-    Rigidbody2D rb;
-    public float jumpForce;
-    private Animator anim;
+   // Rigidbody2D rb;
+
+    public float moveSpeed;
+    private bool isMoving;
+    private Vector2 pantufinha;
+
     public int pontos = 0;
     public int vidas = 3;
     private numerovidas lifeSystem;
     private numeroPontos pointsSystem;
     private gameoverScript gameOver;
-    public GameObject projectile;
-    private AudioSource maudioSrc;
-   
+    
+
+
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+       // rb = GetComponent<Rigidbody2D>();
+       
         lifeSystem = FindObjectOfType<numerovidas>();
         pointsSystem = FindObjectOfType<numeroPontos>();
         gameOver = FindObjectOfType<gameoverScript>();
-        maudioSrc = GetComponent<AudioSource>();
+     
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        Move();
-        Jump();
-        
-        if (Input.GetButtonDown("Fire2"))
+        if (!isMoving)
         {
-            maudioSrc.Play();
-            Rigidbody2D clone;
-            clone = Instantiate(projectile.GetComponent<Rigidbody2D>(), transform.position, transform.rotation);
-            clone.velocity = transform.TransformDirection(Vector3.right * 10);
-            
-        }
-        }
-void FixedUpdate()
-    {
-        // how fast the player is moving and responds accordingly
-        anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
-        // how fast the player is moving and responds accordingly
-        anim.SetFloat("jump", Mathf.Abs(rb.velocity.y));
-    }
-    void Move()
-    {
-        float x = Input.GetAxisRaw("Horizontal");
-        float moveBy = x * speed;
-        rb.velocity = new Vector2(moveBy, rb.velocity.y);
-    }
-    void Jump() {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        }
-    }
-    
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        //check, if gameobject has tag Moeda
-        if (other.tag == "Moeda") {
-//incrementar o número de pontos
-         pontos = pontos + 1;
-        pointsSystem.AddPoint();
-        //delete Moeda gameobject from the scene
-        Destroy(other.gameObject);
-    }
-}
-    void OnCollisionEnter2D(Collision2D other)
-    {
-       
-        //check, if gameobject has tag Inimigo
-        if (other.gameObject.tag == "Inimigo")
-        {
-            //decrementar o número de vidas
-            vidas = vidas - 1;
-            lifeSystem.TakeLife();
-            Debug.Log("vidas: " + vidas);
-            if (vidas == 0)
+           pantufinha.x = Input.GetAxisRaw("Horizontal");
+           pantufinha.y = Input.GetAxisRaw("Vertical");
+
+            if (pantufinha != Vector2.zero)
             {
-                Destroy(gameObject);
-                gameOver.sayGameOver();
-                SceneManager.LoadScene("MenuPrincipal");
+                var targetPos = transform.position;
+                targetPos.x += targetPos.x + 0.01f * pantufinha.x; 
+                targetPos.y += targetPos.y + 0.01f * pantufinha.y;
+                transform.position = targetPos;
+                StartCoroutine(Move(targetPos));
+               
             }
+
         }
+   
+   IEnumerator Move(Vector3 targetPos)
+    {
+        isMoving = true;
+           
+            while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
+            {
+                
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+            yield return null;
+        }
+        
+        isMoving = false;
+
+    }
+        /* void OnTriggerEnter2D(Collider2D other)
+         {
+             //check, if gameobject has tag Moeda
+             if (other.tag == "Moeda") {
+     //incrementar o número de pontos
+              pontos = pontos + 1;
+             pointsSystem.AddPoint();
+             //delete Moeda gameobject from the scene
+             Destroy(other.gameObject);
+         }
+     }
+         void OnCollisionEnter2D(Collision2D other)
+         {
+
+             //check, if gameobject has tag Inimigo
+             if (other.gameObject.tag == "Inimigo")
+             {
+                 //decrementar o número de vidas
+                 vidas = vidas - 1;
+                 lifeSystem.TakeLife();
+                 Debug.Log("vidas: " + vidas);
+                 if (vidas == 0)
+                 {
+                     Destroy(gameObject);
+                     gameOver.sayGameOver();
+                     SceneManager.LoadScene("MenuPrincipal");
+                 }
+             }*/
     }
 }
