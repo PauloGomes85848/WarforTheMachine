@@ -1771,11 +1771,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   jumpForce: 6
-  isGroundedChecker: {fileID: 445803071}
-  checkGroundRadius: 0.05
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
   pontos: 0
   vidas: 3
   projectile: {fileID: 2348336836831468672, guid: 55e31c8118d09e947a6b3c51d92ed174,
@@ -1848,7 +1843,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1732998192
