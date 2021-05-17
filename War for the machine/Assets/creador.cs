@@ -5,7 +5,6 @@ public class creador : MonoBehaviour
     void Start()
     {
         // Instantiate at position (0, 0, 0) and zero rotation.
-        Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        Instantiate(myPrefab, new Vector3(5,0 , 0), Quaternion.identity);
+       
     }
 }

@@ -8,6 +8,9 @@ TagManager:
   - Moeda
   - Vidas
   - Inimigo
+  - player
+  - bloco
+  - Enemy
   layers:
   - Default
   - TransparentFX
