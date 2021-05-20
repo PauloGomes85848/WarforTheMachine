@@ -57,3 +57,9 @@ TagManager:
   - name: Player
     uniqueID: 776376393
     locked: 0
+  - name: Enemy
+    uniqueID: 543168577
+    locked: 0
+  - name: New Layer
+    uniqueID: 2905047081
+    locked: 0

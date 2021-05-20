@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class bloco : MonoBehaviour
 {
-    public GameObject blocoPila;
+    public GameObject blocoMaquina;
     public GameObject peça;
 
     void Start()
     {
-        blocoPila = GameObject.Find("Bloco");
+        blocoMaquina = GameObject.Find("Bloco");
+       
     }
 
     // Update is called once per frame
@@ -22,8 +23,9 @@ public class bloco : MonoBehaviour
     {
         if(other.gameObject.tag == "bloco")
         {
-            Destroy(blocoPila);
+            Destroy(blocoMaquina);
             Instantiate(peça, new Vector3(3, -2, -2), Quaternion.identity);
+           
         }
     }
 }

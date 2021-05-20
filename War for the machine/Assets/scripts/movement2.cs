@@ -8,6 +8,8 @@ public class movement2 : MonoBehaviour
     public float moveSpeed;
     public float horizontal;
     public float vertical;
+    public int nPecas = 0;
+    public int vidas = 3;
     Vector2 position;
 
     void Update()
