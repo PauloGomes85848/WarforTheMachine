@@ -7,7 +7,6 @@ public class numerovidas : MonoBehaviour
     public Text text;
     public int startingLives;
     private int lifeCounter;
- 
 
     // Start is called before the first frame update
     void Start()

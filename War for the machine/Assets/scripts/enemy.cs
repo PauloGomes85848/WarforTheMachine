@@ -21,9 +21,7 @@ public class enemy : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > 3)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-
         }
-
     }
-
+   
 }
