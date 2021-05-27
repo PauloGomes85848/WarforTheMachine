@@ -25,9 +25,9 @@ public class bloco : MonoBehaviour
         if(other.gameObject.tag == "bloco")
         {
             Destroy(blocoMaquina);
-            Instantiate(peça, new Vector3(3, -2, -2), Quaternion.identity);
+            Instantiate(peça, new Vector3(4, -3, -2), Quaternion.identity);
             peça.tag = "pecaa";
-           
+            GameObject.Find("Peça(Clone)").GetComponent<PolygonCollider2D>().isTrigger = true;
         }
     }
 }

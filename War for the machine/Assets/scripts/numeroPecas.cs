@@ -17,7 +17,7 @@ public class numeroPecas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "" + pecasCounter;
+        //text.text = "" + pecasCounter;
         //GetComponent<Text>().text = Platformer.vidas;
     }
 

@@ -36,20 +36,20 @@ public class movement2 : MonoBehaviour
         position.y = position.y + moveSpeed * vertical * Time.deltaTime;
         transform.position = position;
     }
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         //check, if gameobject has tag Moeda
        
-        if (other.gameObject.tag == "pecaa")
+        if (other.gameObject.CompareTag("pecaa"))
         {
           
             //incrementar o número de pontos
             nPecas = nPecas + 1;
             Debug.Log("npecas= " + nPecas);
             pecasSystem.addPeca();
-            Debug.Log(pecasSystem);
+            //Debug.Log(pecasSystem);
             //delete Moeda gameobject from the scene
-            Destroy(gameObject);
+            Destroy(other.gameObject);
         }
     }
 }

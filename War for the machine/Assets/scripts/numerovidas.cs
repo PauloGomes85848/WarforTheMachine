@@ -7,8 +7,8 @@ public class numerovidas : MonoBehaviour
     public Text text;
     public int startingLives;
     private int lifeCounter;
-    public int startingPoints;
-    private int pointsCounter;
+ 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +19,11 @@ public class numerovidas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = "" + lifeCounter;
+        //text.text = "" + lifeCounter;
         //GetComponent<Text>().text = Platformer.vidas;
     }
     public void TakeLife()
     {
         lifeCounter--;
-    }
-    public void AddPoint()
-    {
-
     }
 }

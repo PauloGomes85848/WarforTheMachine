@@ -1,34 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class enemy : MonoBehaviour
 {
+    public float speed;  //10
+    public float stoppingDistance;  //7
 
-    private GameObject player;
-    private RaycastHit2D sighttest;
+    private Transform target;
 
     void Start()
     {
-        player = GameObject.Find("Player");
+        target = GameObject.FindGameObjectWithTag("player").GetComponent<Transform>();
+
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        //precompute raysettings
-        Vector3 start = transform.position;
-        Vector3 direction = player.transform.position - transform.position;
 
-        float distance = 5.5f;
-
-        //draw ray in editor
-        //Debug.DrawRay(start, direction * distance, Color.red, 2f, false);
-
-        sighttest = Physics2D.Raycast(start, direction, distance);
-
-        if (sighttest != null && sighttest.collider != null)
+        if (Vector2.Distance(transform.position, target.position) > 3)
         {
-            //if(sighttest.collider.tag == "player") Debug.Log(sighttest.collider.tag);
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
         }
+
     }
+
 }
