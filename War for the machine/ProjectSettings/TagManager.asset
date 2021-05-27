@@ -11,6 +11,8 @@ TagManager:
   - player
   - bloco
   - Enemy
+  - pecaa
+  - "pe\xE7a"
   layers:
   - Default
   - TransparentFX
