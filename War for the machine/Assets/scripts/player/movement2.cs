@@ -13,12 +13,15 @@ public class movement2 : MonoBehaviour
     public int vidas = 3;
     private numeroPecas pecasSystem;
     Vector2 position;
+    public GameObject nextlevel;
+
 
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         pecasSystem = FindObjectOfType<numeroPecas>();
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update()
@@ -50,6 +53,18 @@ public class movement2 : MonoBehaviour
             //Debug.Log(pecasSystem);
             //delete Moeda gameobject from the scene
             Destroy(other.gameObject);
+            Instantiate(nextlevel, new Vector3(9.07f, -1.6f, 0), Quaternion.identity);
+                 
         }
+    }
+    public void OnLevelWasLoaded(int level)
+    {
+            FindStartPos();
+
+    }
+
+    void FindStartPos()
+    {
+        transform.position = GameObject.FindWithTag("StartPos").transform.position;
     }
 }

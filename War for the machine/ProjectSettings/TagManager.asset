@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - pecaa
   - "pe\xE7a"
+  - StartPos
   layers:
   - Default
   - TransparentFX
