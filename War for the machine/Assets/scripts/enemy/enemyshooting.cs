@@ -5,6 +5,8 @@ using UnityEngine;
 public class enemyshooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
+    public Transform firePoint;
+    public float bulletForce = 20f;
     // Start is called before the first frame update
     void Start()
     {
