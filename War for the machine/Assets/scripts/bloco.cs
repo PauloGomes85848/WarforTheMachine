@@ -22,8 +22,10 @@ public class bloco : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
+        
         if(other.gameObject.tag == "bloco")
         {
+            Debug.Log("Bateu");
             Destroy(blocoMaquina);
             Instantiate(peça, new Vector3(4, -3, -2), Quaternion.identity);
             peça.tag = "pecaa";

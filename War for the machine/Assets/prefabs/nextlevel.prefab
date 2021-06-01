@@ -124,3 +124,4 @@ MonoBehaviour:
   iLevelToLoad: 1
   sLevelToLoad: Nivel 2
   useIntegerToLoadLevel: 0
+  canvas: {fileID: 9155347678606849259, guid: d35eb3f832c90284bb2c73ddfac351d4, type: 3}

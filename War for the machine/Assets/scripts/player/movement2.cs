@@ -16,7 +16,6 @@ public class movement2 : MonoBehaviour
     public GameObject nextlevel;
 
 
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -32,13 +31,27 @@ public class movement2 : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(CanMoveOrInteract())
+        {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
         Vector2 position = transform.position;
         position.x = position.x + moveSpeed * horizontal * Time.deltaTime;
         position.y = position.y + moveSpeed * vertical * Time.deltaTime;
         transform.position = position;
+        }
     }
+
+    bool CanMoveOrInteract()
+    {
+        bool can = true;
+
+        if (FindObjectOfType<InventorySystem>().isOpen)
+            can = false;
+
+        return can;
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         //check, if gameobject has tag Moeda
@@ -50,6 +63,7 @@ public class movement2 : MonoBehaviour
             nPecas = nPecas + 1;
             Debug.Log("npecas= " + nPecas);
             pecasSystem.addPeca();
+            FindObjectOfType<InventorySystem>().PickUp(other.gameObject);
             //Debug.Log(pecasSystem);
             //delete Moeda gameobject from the scene
             Destroy(other.gameObject);

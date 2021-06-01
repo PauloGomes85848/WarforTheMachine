@@ -11,6 +11,7 @@ public class loadLevel : MonoBehaviour
     public string sLevelToLoad;
 
     public bool useIntegerToLoadLevel = false;
+    public GameObject canvas;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -27,6 +28,8 @@ public class loadLevel : MonoBehaviour
         if(useIntegerToLoadLevel)
         {
             SceneManager.LoadScene(iLevelToLoad);
+            canvas.SetActive(true);
+
         }
         else
         {

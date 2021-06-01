@@ -5,10 +5,12 @@ using UnityEngine;
 public class cameraController : MonoBehaviour
 {
     public Transform target;
+    public GameObject player;
 
     void Start()
     {
-        
+        player = GameObject.Find("Player");
+        target = player.transform;
     }
 
     // Update is called once per frame

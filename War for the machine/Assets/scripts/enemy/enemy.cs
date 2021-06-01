@@ -22,6 +22,8 @@ public class enemy : MonoBehaviour
     public float maxX;
     public float minY;
     public float maxY;
+
+    public Animator animator;
     
 
     //public Transform goal;
@@ -45,15 +47,22 @@ public class enemy : MonoBehaviour
         {
 
         }*/
+
+        animator.SetFloat("Speed", Mathf.Abs(speed * Time.deltaTime));
+
        
          
 
         if (Vector2.Distance(transform.position, player.position) <= shootingdistance)
         {
+            
+            
             if (timeBtwShots <= 0)
             {
                 Instantiate(projectile, transform.position, Quaternion.identity);
                 timeBtwShots = startTimeBtwShots;
+                animator.SetBool("IsShooting", true);
+                
             }
             else
             {

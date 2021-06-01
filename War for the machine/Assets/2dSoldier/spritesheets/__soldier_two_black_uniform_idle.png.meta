@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 72ee0a34f182e504d80e3464cb658586
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 863752427514542775
+    second: __soldier_two_black_uniform_idle_0
+  - first:
+      213: 2430242922521738716
+    second: __soldier_two_black_uniform_idle_1
+  - first:
+      213: 5929022016564471354
+    second: __soldier_two_black_uniform_idle_2
+  - first:
+      213: 7174692294009696454
+    second: __soldier_two_black_uniform_idle_3
+  - first:
+      213: 1248430921947814139
+    second: __soldier_two_black_uniform_idle_4
+  - first:
+      213: -3352614430552368902
+    second: __soldier_two_black_uniform_idle_5
+  - first:
+      213: -303579573653013056
+    second: __soldier_two_black_uniform_idle_6
+  - first:
+      213: -9207521096866828571
+    second: __soldier_two_black_uniform_idle_7
+  - first:
+      213: -5090942699447315914
+    second: __soldier_two_black_uniform_idle_8
+  - first:
+      213: -7907979911743999923
+    second: __soldier_two_black_uniform_idle_9
+  - first:
+      213: -652161620967768715
+    second: __soldier_two_black_uniform_idle_10
+  - first:
+      213: 6131353139979871767
+    second: __soldier_two_black_uniform_idle_11
+  - first:
+      213: -4906771437298545269
+    second: __soldier_two_black_uniform_idle_12
+  - first:
+      213: -7697324592204553633
+    second: __soldier_two_black_uniform_idle_13
+  - first:
+      213: 8309992445862501702
+    second: __soldier_two_black_uniform_idle_14
+  - first:
+      213: 7755960147482808614
+    second: __soldier_two_black_uniform_idle_15
+  - first:
+      213: -4855158193821010403
+    second: __soldier_two_black_uniform_idle_16
+  - first:
+      213: -9160630991254932745
+    second: __soldier_two_black_uniform_idle_17
+  - first:
+      213: 7892160770114589312
+    second: __soldier_two_black_uniform_idle_18
+  - first:
+      213: -4028475317068961835
+    second: __soldier_two_black_uniform_idle_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1616
+        width: 395
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bab2e7a14aacfb00800000000000000
+      internalID: 863752427514542775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1616
+        width: 394
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddb0d2ef05f9b120800000000000000
+      internalID: 2430242922521738716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_2
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1616
+        width: 393
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36abca5c1e184250800000000000000
+      internalID: 5929022016564471354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 1617
+        width: 392
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c03e25d0a0a19360800000000000000
+      internalID: 7174692294009696454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1616
+        width: 392
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8105d1f41535110800000000000000
+      internalID: 1248430921947814139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1077
+        width: 391
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8d31630fe1971d0800000000000000
+      internalID: -3352614430552368902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_6
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1077
+        width: 391
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdf8577cf779cbf0800000000000000
+      internalID: -303579573653013056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_7
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1077
+        width: 391
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee665f8850583080800000000000000
+      internalID: -9207521096866828571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_8
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1078
+        width: 391
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632139b76965959b0800000000000000
+      internalID: -5090942699447315914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_9
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1077
+        width: 390
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40f2952b26314290800000000000000
+      internalID: -7907979911743999923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 538
+        width: 389
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57db216067e03f6f0800000000000000
+      internalID: -652161620967768715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_11
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 538
+        width: 390
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716e9fc0231f61550800000000000000
+      internalID: 6131353139979871767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_12
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 538
+        width: 391
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d89cdff55a7ebb0800000000000000
+      internalID: -4906771437298545269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_13
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 539
+        width: 391
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52e4c8c01c9d2590800000000000000
+      internalID: -7697324592204553633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_14
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 538
+        width: 391
+        height: 503
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d50dde916035370800000000000000
+      internalID: 8309992445862501702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_15
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 391
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6219cca49a4b2ab60800000000000000
+      internalID: 7755960147482808614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_16
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 392
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16b8f0b8530f9cb0800000000000000
+      internalID: -4855158193821010403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_17
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 392
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2b0d706a6eed080800000000000000
+      internalID: -9160630991254932745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_18
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 393
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08214fce766968d60800000000000000
+      internalID: 7892160770114589312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: __soldier_two_black_uniform_idle_19
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 0
+        width: 393
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7ecabfa0bf718c0800000000000000
+      internalID: -4028475317068961835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
