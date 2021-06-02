@@ -70,6 +70,17 @@ public class movement2 : MonoBehaviour
             Instantiate(nextlevel, new Vector3(9.07f, -1.6f, 0), Quaternion.identity);
                  
         }
+
+        if (other.gameObject.CompareTag("chave"))
+        {
+          
+            //incrementar o número de pontos
+            FindObjectOfType<InventorySystem>().PickUp(other.gameObject);
+            //Debug.Log(pecasSystem);
+            //delete Moeda gameobject from the scene
+            Destroy(other.gameObject);
+                 
+        }
     }
     public void OnLevelWasLoaded(int level)
     {

@@ -15,11 +15,6 @@ public class InventorySystem : MonoBehaviour
     public GameObject ui_Window;
     public Image[] items_images;
 
-    private void Start() 
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     private void Update() 
     {
         if(Input.GetKeyDown(KeyCode.I))

@@ -15,6 +15,7 @@ TagManager:
   - "pe\xE7a"
   - StartPos
   - UI
+  - chave
   layers:
   - Default
   - TransparentFX
